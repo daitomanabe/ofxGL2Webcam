@@ -1,0 +1,6 @@
+framework module GL2Webcam {
+  umbrella header "GL2Webcam.h"
+
+  export *
+  module * { export * }
+}
