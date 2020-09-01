@@ -1,5 +1,4 @@
 #include "ofApp.h"
-#include "ofxGL2Webcam.h"
 
 //--------------------------------------------------------------
 void ofApp::setup(){

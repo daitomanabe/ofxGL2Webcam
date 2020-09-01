@@ -3,6 +3,12 @@
 ofxGL2Webcam glwc;
 
 void ofApp::setup() {
+    printf("%s\n", glGetString(GL_VENDOR));
+    printf("%s\n", glGetString(GL_RENDERER));
+    printf("%s\n", glGetString(GL_VERSION));
+
+    ofSetFrameRate(60);
+
     glwc.setup();
 }
 

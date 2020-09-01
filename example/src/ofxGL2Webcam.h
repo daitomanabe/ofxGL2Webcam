@@ -7,12 +7,8 @@ class ofxGL2Webcam{
     ofFbo fbo;
 public:
     void setup(){
-        printf("%s\n", glGetString(GL_VENDOR));
-        printf("%s\n", glGetString(GL_RENDERER));
-        printf("%s\n", glGetString(GL_VERSION));
-        ofSetFrameRate(60);
         fbo.allocate(800, 600);
-        gl2wc.setup("tcp://localhost:46664", 800, 600, GL_TEXTURE_RECTANGLE);
+        gl2wc.setup("tcp://localhost:46664", "test_ofx_gl2webcam", 800, 600, GL_TEXTURE_RECTANGLE);
 
     }
     void begin(){

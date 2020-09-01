@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DC49AF36F082C8B6D7E72ED /* GL2Webcam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2869B00921A2565E4916510F /* GL2Webcam.framework */; };
-		98E6D2BA26BCF235822F371A /* GL2Webcam.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2869B00921A2565E4916510F /* GL2Webcam.framework */; };
+		0AA1BBD224FE4E7E000E4E17 /* GL2Webcam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1BBD124FE4E7D000E4E17 /* GL2Webcam.framework */; };
+		0AA1BBD324FE4E7E000E4E17 /* GL2Webcam.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AA1BBD124FE4E7D000E4E17 /* GL2Webcam.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 /* End PBXBuildFile section */
@@ -20,14 +20,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				98E6D2BA26BCF235822F371A /* GL2Webcam.framework in CopyFiles */,
+				0AA1BBD324FE4E7E000E4E17 /* GL2Webcam.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2869B00921A2565E4916510F /* GL2Webcam.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GL2Webcam.framework; path = ../../../../addons/ofxGL2Webcam/libs/osx/GL2Webcam.framework; sourceTree = "<group>"; };
+		0AA1BBD124FE4E7D000E4E17 /* GL2Webcam.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GL2Webcam.framework; path = ../../libs/osx/GL2Webcam.framework; sourceTree = "<group>"; };
 		9D82448807BE201AB64814D8 /* ofxGL2Webcam.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxGL2Webcam.h; path = ../../../../addons/ofxGL2Webcam/src/ofxGL2Webcam.h; sourceTree = SOURCE_ROOT; };
 		E42962AC2163EDD300A6A9E2 /* ofCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofCamera.cpp; path = ../../../../libs/openFrameworks/3d/ofCamera.cpp; sourceTree = SOURCE_ROOT; };
 		E42962AD2163EDD300A6A9E2 /* ofMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofMesh.h; path = ../../../../libs/openFrameworks/3d/ofMesh.h; sourceTree = SOURCE_ROOT; };
@@ -217,19 +217,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DC49AF36F082C8B6D7E72ED /* GL2Webcam.framework in Frameworks */,
+				0AA1BBD224FE4E7E000E4E17 /* GL2Webcam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08BFC5B13FDB62034E3CD7BD /* libs */ = {
+		0AA1BBD024FE4E7D000E4E17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7430429264D97634BD9E604D /* osx */,
+				0AA1BBD124FE4E7D000E4E17 /* GL2Webcam.framework */,
 			);
-			name = libs;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		422EAB665870851AC15A1ADD /* src */ = {
@@ -245,14 +245,6 @@
 			children = (
 			);
 			name = local_addons;
-			sourceTree = "<group>";
-		};
-		7430429264D97634BD9E604D /* osx */ = {
-			isa = PBXGroup;
-			children = (
-				2869B00921A2565E4916510F /* GL2Webcam.framework */,
-			);
-			name = osx;
 			sourceTree = "<group>";
 		};
 		BB4B014C10F69532006C3DED /* addons */ = {
@@ -555,6 +547,7 @@
 				BB4B014C10F69532006C3DED /* addons */,
 				6948EE371B920CB800B5AC1A /* local_addons */,
 				E4B69B5B0A3A1756003C02F2 /* simple_exampleDebug.app */,
+				0AA1BBD024FE4E7D000E4E17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -572,7 +565,6 @@
 			isa = PBXGroup;
 			children = (
 				422EAB665870851AC15A1ADD /* src */,
-				08BFC5B13FDB62034E3CD7BD /* libs */,
 			);
 			name = ofxGL2Webcam;
 			sourceTree = "<group>";
@@ -653,7 +645,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "xcodebuild -project \"$OF_PATH/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj\" -target openFrameworks -configuration \"${CONFIGURATION}\"";
+			shellScript = "xcodebuild -project \"$OF_PATH/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj\" -target openFrameworks -configuration \"${CONFIGURATION}\"\n";
 		};
 		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -690,7 +682,7 @@
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../libs/osx/GL2Webcam.framework\"";
+				FRAMEWORK_SEARCH_PATHS = ../../../../addons/ofxGL2Webcam/libs/osx;
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
 				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
@@ -709,7 +701,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					../../../../addons/ofxGL2Webcam/libs,
-					../../../../addons/ofxGL2Webcam/libs/osx,
+					"../../../../addons/ofxGL2Webcam/libs/osx/**",
 					../../../../addons/ofxGL2Webcam/src,
 					../../../../addons/ofxGL2Webcam/libs/osx/GL2Webcam.framework/Versions/A/Headers,
 				);
@@ -749,6 +741,7 @@
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
@@ -768,7 +761,7 @@
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../libs/osx/GL2Webcam.framework\"";
+				FRAMEWORK_SEARCH_PATHS = ../../../../addons/ofxGL2Webcam/libs/osx;
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
 				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
@@ -785,7 +778,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					../../../../addons/ofxGL2Webcam/libs,
-					../../../../addons/ofxGL2Webcam/libs/osx,
+					"../../../../addons/ofxGL2Webcam/libs/osx/**",
 					../../../../addons/ofxGL2Webcam/src,
 					../../../../addons/ofxGL2Webcam/libs/osx/GL2Webcam.framework/Versions/A/Headers,
 				);
@@ -809,7 +802,7 @@
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../libs/osx/GL2Webcam.framework\"";
+				FRAMEWORK_SEARCH_PATHS = ../../../../addons/ofxGL2Webcam/libs/osx;
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
 				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
@@ -827,7 +820,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					../../../../addons/ofxGL2Webcam/libs,
-					../../../../addons/ofxGL2Webcam/libs/osx,
+					"../../../../addons/ofxGL2Webcam/libs/osx/**",
 					../../../../addons/ofxGL2Webcam/src,
 					../../../../addons/ofxGL2Webcam/libs/osx/GL2Webcam.framework/Versions/A/Headers,
 				);
@@ -867,6 +860,7 @@
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
@@ -901,6 +895,7 @@
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
