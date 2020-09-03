@@ -2,24 +2,24 @@
 #define ofxGL2Webcam_h
 #include "GL2Webcam.h"
 
+// main tcp listening port
+static const char *zmqAddr = "tcp://localhost:46664";
+
 class ofxGL2Webcam{
     GL2Webcam gl2wc;
     ofFbo fbo;
 public:
-    void setup(){
-        fbo.allocate(800, 600);
-        gl2wc.setup("tcp://localhost:46664", "test_ofx_gl2webcam", 800, 600, GL_TEXTURE_RECTANGLE);
-
+    void setup(const char * clientName, uint32_t webcamWidth, uint32_t webcamHeight){
+        fbo.allocate(webcamWidth, webcamHeight);
+        gl2wc.setup(zmqAddr, clientName, webcamWidth, webcamHeight, GL_TEXTURE_RECTANGLE);
     }
     void begin(){
         fbo.begin();
     }
     void end(){
         fbo.end();
-        
         ofTexture tex = fbo.getTexture();
         ofTextureData texData = tex.getTextureData();
-
         gl2wc.publishTextureRect(texData.textureID, texData.width, texData.height);
     }
     void draw(){

@@ -1,5 +1,6 @@
 #include "ofApp.h"
 #include "ofxGL2Webcam.h"
+
 ofxGL2Webcam glwc;
 
 void ofApp::setup() {
@@ -9,7 +10,7 @@ void ofApp::setup() {
 
     ofSetFrameRate(60);
 
-    glwc.setup();
+    glwc.setup("ofx_gl2webcam", 800, 600);
 }
 
 void ofApp::update(){
