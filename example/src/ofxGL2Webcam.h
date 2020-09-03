@@ -18,12 +18,10 @@ public:
     }
     void end(){
         fbo.end();
-        ofTexture tex = fbo.getTexture();
-        ofTextureData texData = tex.getTextureData();
+        ofTextureData & texData = fbo.getTexture().getTextureData();
         gl2wc.publishTextureRect(texData.textureID, texData.width, texData.height);
     }
     void draw(){
-        ofSetColor(255, 255, 255);
         fbo.draw(0, 0, ofGetWidth(), ofGetHeight());
     }
 };
