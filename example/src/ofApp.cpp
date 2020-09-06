@@ -1,7 +1,4 @@
 #include "ofApp.h"
-#include "ofxGL2Webcam.h"
-
-ofxGL2Webcam glwc;
 
 void ofApp::setup() {
     printf("%s\n", glGetString(GL_VENDOR));
@@ -9,7 +6,7 @@ void ofApp::setup() {
     printf("%s\n", glGetString(GL_VERSION));
 
     ofSetFrameRate(60);
-
+    // name, width, height
     glwc.setup("ofx_gl2webcam", 800, 600);
 }
 
