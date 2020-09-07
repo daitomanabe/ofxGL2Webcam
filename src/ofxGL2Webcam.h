@@ -28,11 +28,13 @@
 #include <cstdint>
 #include <cstddef>
 
+class GL2Webcam;
+
 // main tcp listening port
-static const char *zmqAddr = "tcp://localhost:46664";
+static constexpr char zmqAddr[] = "tcp://localhost:46664";
 
 class ofxGL2Webcam{
-    void *gl2wc;
+    GL2Webcam *gl2wc;
     ofFbo fbo;
 public:
     virtual ~ofxGL2Webcam();
