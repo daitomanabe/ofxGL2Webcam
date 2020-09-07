@@ -35,9 +35,6 @@ Installation
 - project settings -> target -> Build Settings
   * Framework Search Paths: add "../../../addons/ofxGL2Webcam/libs/osx"
   * Header Search Paths: add "../../../addons/ofxGL2Webcam/libs/osx/GL2Webcam.framework/Headers"
-- add 2 flags to "Other C++ Flags" (in build settings)
-  * -x
-  * objective-c++
 
 Instruction
 ------------
