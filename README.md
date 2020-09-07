@@ -1,11 +1,16 @@
 GL2Webcam for openFrameworks
 ==========================
 
+![gl2webcamdemo](https://user-images.githubusercontent.com/72069/92401639-0373c400-f169-11ea-9a25-87df2ac22839.gif)
+
+
 About
 -----
 GL2Webcam addon
 
 Inspired by ofxSyphon
+
+You can publish your openFrameworks texture to virtual webcam device with this addon.
 
 Work in progress!
 
