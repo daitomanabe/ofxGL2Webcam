@@ -10,6 +10,7 @@
 		0A8C6FC124FE53FB00B21BED /* GL2Webcam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2869B00921A2565E4916510F /* GL2Webcam.framework */; };
 		0A8C6FC224FE53FB00B21BED /* GL2Webcam.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2869B00921A2565E4916510F /* GL2Webcam.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A8C6FC525009D9800B21BED /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C6FC425009D9800B21BED /* ofApp.cpp */; };
+		95A0871325071CDE006808EB /* ofxGL2Webcam.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95A0871225071CDE006808EB /* ofxGL2Webcam.mm */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		07F3551B957578DD14B9E882 /* ofxGL2Webcam.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxGL2Webcam.h; path = ../../../addons/ofxGL2Webcam/src/ofxGL2Webcam.h; sourceTree = SOURCE_ROOT; };
 		0A8C6FC425009D9800B21BED /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
 		2869B00921A2565E4916510F /* GL2Webcam.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GL2Webcam.framework; path = ../../../addons/ofxGL2Webcam/libs/osx/GL2Webcam.framework; sourceTree = "<group>"; };
+		95A0871225071CDE006808EB /* ofxGL2Webcam.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ofxGL2Webcam.mm; path = ../src/ofxGL2Webcam.mm; sourceTree = "<group>"; };
 		E42962AC2163EDD300A6A9E2 /* ofCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofCamera.cpp; path = ../../../libs/openFrameworks/3d/ofCamera.cpp; sourceTree = SOURCE_ROOT; };
 		E42962AD2163EDD300A6A9E2 /* ofMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofMesh.h; path = ../../../libs/openFrameworks/3d/ofMesh.h; sourceTree = SOURCE_ROOT; };
 		E42962AE2163EDD300A6A9E2 /* ofNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofNode.h; path = ../../../libs/openFrameworks/3d/ofNode.h; sourceTree = SOURCE_ROOT; };
@@ -243,6 +245,7 @@
 		422EAB665870851AC15A1ADD /* src */ = {
 			isa = PBXGroup;
 			children = (
+				95A0871225071CDE006808EB /* ofxGL2Webcam.mm */,
 				07F3551B957578DD14B9E882 /* ofxGL2Webcam.h */,
 			);
 			name = src;
@@ -684,6 +687,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A0871325071CDE006808EB /* ofxGL2Webcam.mm in Sources */,
 				0A8C6FC525009D9800B21BED /* ofApp.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 			);
