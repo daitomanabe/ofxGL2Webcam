@@ -1,1 +1,1 @@
-ofxGL2Webcam
+../../ofxGL2Webcam
