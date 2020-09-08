@@ -39,6 +39,7 @@ Installation
   * keep "Embed & Sign"
 - Change project settings -> target -> Build Settings
   * Framework Search Paths: add "../../../addons/ofxGL2Webcam/libs/osx"
+  
 Instruction
 -----------
 
@@ -57,4 +58,6 @@ Instruction
 - When you close one of the consumer app, its stream will display splash screen for 10 seconds.
 
 - After 10 seconds of inactivity, the device will be destroyed.
+
+- The name of virtual-webcam-device is GL2Webcam Virtual Camera + id now. will be updated soon..
 
