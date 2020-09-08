@@ -5,7 +5,7 @@
 //
 
 #include "ofxGL2Webcam.h"
-#include "GL2Webcam.h"
+#include <GL2Webcam/GL2Webcam.h>
 #include "ofMain.h"
 
 ofxGL2Webcam::~ofxGL2Webcam() {

@@ -30,4 +30,4 @@ FOUNDATION_EXPORT const unsigned char GL2WebcamVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <GL2Webcam/PublicHeader.h>
 
-#include <GL2WebcamApi.h>
+#include <GL2Webcam/GL2WebcamApi.h>
