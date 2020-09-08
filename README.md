@@ -1,4 +1,4 @@
-GL2Webcam for openFrameworks
+ofxGL2Webcam for openFrameworks
 ==========================
 
 ![gl2webcamdemo](https://user-images.githubusercontent.com/72069/92401639-0373c400-f169-11ea-9a25-87df2ac22839.gif)
@@ -35,10 +35,12 @@ Installation
 
 - Add GL2Webcam.framework to your XCode project
   * settings -> target -> Frameworks, Libraries & Embedded Content
-  * add GL2Webcam.framework to the list (with [+] button)
+      * add **GL2Webcam.framework** to the list (with [+] button) [if not added]
   * keep "Embed & Sign"
 - Change project settings -> target -> Build Settings
-  * Framework Search Paths: add "../../../addons/ofxGL2Webcam/libs/osx"
+  * Framework Search Paths: add "**../../../addons/ofxGL2Webcam/libs/osx**" [if not added]
+  * Runpath Search Paths] add "**@executable_path/../Frameworks**"
+
 Instruction
 -----------
 
