@@ -20,7 +20,9 @@ See the included License.txt file
 
 Requirements
 ---------
-GL2Webcam and openFrameworks 011 or better
+* GL2Webcam and openFrameworks 011 or better
+
+* required GLVersion == 4.0
 
 Installation
 ------------
@@ -39,7 +41,6 @@ Installation
   * keep "Embed & Sign"
 - Change project settings -> target -> Build Settings
 * Framework Search Paths: add "**../../../addons/ofxGL2Webcam/libs/osx**" [if not added]
-  * Runpath Search Paths] add "**@executable_path/../Frameworks**"
 
 -----------
 
